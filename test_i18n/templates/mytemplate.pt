@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:tal="http://xml.zope.org/namespaces/tal">
+<head>
+  <title>i18n test</title>
+</head>
+<body>
+    <p>
+        ${one.description}
+    </p>
+    <?python
+        with one.force_locale('fr'):
+            description = one.description
+    ?>
+    <p>
+    ${description}
+    </p>
+    <p>
+    ${one.description}
+    </p>
+</body>
+</html>

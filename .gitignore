@@ -1,0 +1,9 @@
+*.egg-info/
+data/
+*.pyc
+env/
+build/
+dist/
+*.sqlite
+*.sw*
+.coverage
