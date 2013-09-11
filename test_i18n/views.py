@@ -15,6 +15,7 @@ def my_view(request):
         one = DBSession.query(MyModel).filter(MyModel.name == 'one').first()
     except DBAPIError:
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
+    one.get_locale = lambda: 'fr'
     return {'one': one, 'project': 'test_i18n'}
 
 conn_err_msg = """\

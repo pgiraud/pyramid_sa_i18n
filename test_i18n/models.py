@@ -26,7 +26,8 @@ make_translatable(options={
 class MyModel(Base, Translatable):
     __tablename__ = 'models'
     __translated_columns__ = [
-        Column('description', Text)
+        Column('description', Text),
+        Column('description_2', Text)
     ]
     id = Column(Integer, primary_key=True)
     name = Column(Text)

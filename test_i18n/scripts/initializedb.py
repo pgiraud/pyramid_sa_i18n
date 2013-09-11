@@ -40,6 +40,7 @@ def main(argv=sys.argv):
     with transaction.manager:
         model = MyModel(name='one', value=1)
         model.description = "in english"
+        model.description_2 = "in english"
         DBSession.add(model)
 
         with model.force_locale('fr'):

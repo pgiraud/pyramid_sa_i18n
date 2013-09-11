@@ -6,16 +6,7 @@
 <body>
     <p>
         ${one.description}
-    </p>
-    <?python
-        with one.force_locale('fr'):
-            description = one.description
-    ?>
-    <p>
-    ${description}
-    </p>
-    <p>
-    ${one.description}
+        ${one.description_2}
     </p>
 </body>
 </html>
