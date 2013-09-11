@@ -1,6 +1,8 @@
 test_i18n README
 ==================
 
+Project to test the usage of SQLAlchemy_i18n
+
 Getting Started
 ---------------
 
